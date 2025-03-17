@@ -92,20 +92,6 @@ A relational database management system (PostgreSQL, MySQL, or SQLite)
 
 SQL knowledge to create, insert, update, and query data
 
-Installation
-
-Clone this repository:
-
-git clone https://github.com/yourusername/law-school-database.git
-
-Navigate to the project folder:
-
-cd law-school-database
-
-Create the database schema by running:
-
-psql -U your_user -d your_database -f schema.sql
-
 Usage
 
 Use SQL queries to insert, update, or retrieve data.
@@ -113,18 +99,6 @@ Use SQL queries to insert, update, or retrieve data.
 Generate reports on admissions, bar passage rates, and employment trends.
 
 Analyze tuition and debt burdens across different law schools.
-
-Contributions
-
-Contributions are welcome! Feel free to fork the repository and submit pull requests.
-
-License
-
-This project is licensed under the MIT License.
-
-Contact
-
-For questions or collaboration opportunities, please reach out to Your Name.
 
 
 
