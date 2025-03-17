@@ -36,40 +36,40 @@ The schema consists of the following tables:
 |                    |total_first_time_passers  |	INT	|Total number of first-time bar exam passers|
 |                    |avg_school_pass_percent  |	DECIMAL(5, 2)	|Average bar exam pass rate for the school|
 |employment_data     |	employment_id	      |CHAR(6)	Primary key| unique identifier for employment record|
-|                    |school_id	INT	Foreign key, links to law_schools table
-|                    |full_time_employed	INT	Number of graduates employed full-time
-|                    |under_employed	INT	Number of underemployed graduates
-|                    |unknown	INT	Number of graduates with unknown employment status
-|                    |biglaw_100	INT	Number of graduates employed in BigLaw firms (top 100)
-|                    |public_service	INT	Number of graduates employed in public service
-|                    |fed_clerks	INT	Number of graduates employed as federal clerks
-|                    |law_school_funded	INT	Number of graduates in law school-funded positions
-|grants              |	grants_id	CHAR(6)	Primary key, unique identifier for grants record
-|                    |school_id	INT	Foreign key, links to law_schools table
-|                    |tuition	DECIMAL(10, 2)	Annual tuition cost
-|                    |percent_students_receiving_grants	DECIMAL(5, 2)	Percentage of students receiving grants
-| debt               |	debt_id	CHAR(6)	Primary key, unique identifier for debt record
-|                    |school_id	INT	Foreign key, links to law_schools table
-|                    |institution_type	VARCHAR(100)	Type of institution (e.g., public/private)
-|                    |avg_loan_disbursement	DECIMAL(12, 2)	Average loan disbursement amount
-|                    |percent_borrowing	DECIMAL(5, 2)	Percentage of students borrowing loans
-|gender              |	gender_id	CHAR(6)	Primary key, unique identifier for gender demographics
-|                    |school_id	INT	Foreign key, links to law_schools table
-|                    |total_fy_class_total	INT	Total first-year class size
-|                    |total_fy_class_men	INT	Number of male students in first-year class
-|                    |total_fy_class_women	INT	Number of female students in first-year class
-|                    |total_fy_class_another_gender_identity	INT DEFAULT 0	Number of students identifying as another gender
-|                    |total_fy_class_prefer_not_to_report	INT DEFAULT 0	Number of students who prefer not to report gender
-|race_demographics   |	race_demographics_id	CHAR(6)	Primary key, unique identifier for race demographics
-|                    |school_id	INT	Foreign key, links to law_schools table
-|                    |race_unknown	INT DEFAULT 0	Number of students with unknown race
-|                    |white	INT DEFAULT 0	Number of white students
-|                    |hispanic	INT DEFAULT 0	Number of Hispanic students
-|                    |american_indian	INT DEFAULT 0	Number of American Indian students
-|                    |asian	INT DEFAULT 0	Number of Asian students
-|                    |african_american	INT DEFAULT 0	Number of African American students
-|                    |native_hawaiian_pacific_islander	INT DEFAULT 0	Number of Native Hawaiian or Pacific Islander students
-|                    |two_or_more_races	INT DEFAULT 0	Number of students identifying with two or more races
+|                    |school_id	|INT	Foreign key| links to law_schools table|
+|                    |full_time_employed|	INT	|Number of graduates employed full-time|
+|                    |under_employed	|INT|	Number of underemployed graduates|
+|                    |unknown|	INT|	Number of graduates with unknown employment status|
+|                    |biglaw_100|	INT|	Number of graduates employed in BigLaw firms (top 100)|
+|                    |public_service	|INT|	Number of graduates employed in public service|
+|                    |fed_clerks|	INT|	Number of graduates employed as federal clerks|
+|                    |law_school_funded	|INT	|Number of graduates in law school-funded positions|
+|grants              |	grants_id	|CHAR(6)	|Primary key, unique identifier for grants record|
+|                    |school_id	|INT	Foreign key| links to law_schools table|
+|                    |tuition	|DECIMAL(10, 2)	|Annual tuition cost|
+|                    |percent_students_receiving_grants	|DECIMAL(5, 2)|	Percentage of students receiving grants|
+| debt               |	debt_id|	CHAR(6)	Primary key| unique identifier for debt record|
+|                    |school_id	|INT	Foreign key| links to law_schools table|
+|                    |institution_type|	VARCHAR(100)|	Type of institution (e.g., public/private)|
+|                    |avg_loan_disbursement|	DECIMAL(12, 2)|	Average loan disbursement amount|
+|                    |percent_borrowing	|DECIMAL(5, 2)|	Percentage of students borrowing loans|
+|gender              |	gender_id	|CHAR(6)	Primary key| unique identifier for gender demographics|
+|                    |school_id	INT|	Foreign key| links to law_schools table|
+|                    |total_fy_class_total|	INT|	Total first-year class size|
+|                    |total_fy_class_men	|INT|	Number of male students in first-year class|
+|                    |total_fy_class_women	|INT|	Number of female students in first-year class|
+|                    |total_fy_class_another_gender_identity	|INT |	Number of students identifying as another gender|
+|                    |total_fy_class_prefer_not_to_report	|INT |	Number of students who prefer not to report gender|
+|race_demographics   |	race_demographics_id	|CHAR(6)	Primary key| unique identifier for race demographics|
+|                    |school_id	|INT	Foreign key| links to law_schools table|
+|                    |race_unknown|	INT |	Number of students with unknown race|
+|                    |white	|INT |	Number of white students|
+|                    |hispanic	|INT |	Number of Hispanic students|
+|                    |american_indian	|INT |	Number of American Indian students|
+|                    |asian	|INT |	Number of Asian students|
+|                    |african_american|	INT |	Number of African American students|
+|                    |native_hawaiian_pacific_islander|	INT |	Number of Native Hawaiian or Pacific Islander students|
+|                    |two_or_more_races|	INT|	Number of students identifying with two or more races|
 
 
 Features
