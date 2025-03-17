@@ -1,6 +1,9 @@
 # Law-Schools
 
-This project defines a relational database schema for storing and managing data related to law schools, including admissions, bar exam results, employment statistics, grants, student debt, gender distribution, and racial demographics.
+Law School Database Schema
+
+This project defines a relational database schema for managing and storing data related to law schools. The schema is designed to hold various data points regarding law school demographics, such as gender and racial distribution. The database already contains data for law schools, gender demographics, and race demographics.
+
 
 Database Structure
 
@@ -82,15 +85,6 @@ Flexible and Scalable: Can accommodate new data sources and additional metrics o
 
 Data Normalization: Ensures efficient storage and retrieval of law school statistics.
 
-Getting Started
-
-Prerequisites
-
-To set up and use this database schema, you will need:
-
-A relational database management system (PostgreSQL, MySQL, or SQLite)
-
-SQL knowledge to create, insert, update, and query data
 
 Usage
 
