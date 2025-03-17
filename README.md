@@ -18,7 +18,7 @@ The schema consists of the following tables:
 |                    |school_id	            |INT	Foreign key| links to law_schools table|
 |                    |total_applications    |	INT	|Total number of applications received|
 |                    |total_offers	        |INT	|Total number of offers made|
-|                    |total_fy_class	      |INT	Total first-year class size|
+|                    |total_fy_class	      |INT	|Total first-year class size|
 |                    |ugpa_75th_percentile  |	DECIMAL(3, 2)	|75th percentile undergraduate GPA|
 |                    |ugpa_50th_percentile  |	DECIMAL(3, 2)|	50th percentile undergraduate GPA|
 |                    |ugpa_25th_percentile  |	DECIMAL(3, 2)	|25th percentile undergraduate GPA|
